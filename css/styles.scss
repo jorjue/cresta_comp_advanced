@@ -1,0 +1,313 @@
+@import url(../../coocostrap/coccostrap.css);
+
+// 共通CSS
+
+body {
+  font-family: 'Noto Serif', 'Noto serif JP', serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.inner-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 100px 0 70px;
+}
+
+.section-title {
+  font-size: 6rem;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 70px;
+}
+
+.section-title::after {
+  content: "";
+  display: inline-block;
+  width: 200px;
+  height: 5px;
+  background-color: currentColor;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.section-bottom {
+  font-size: 9rem;
+  font-weight: bold;
+  line-height: 150px;
+  opacity: 0.05;
+  text-align: right;
+  margin-top: 70px;
+}
+
+main > section:nth-child(even) {
+
+  .container {
+
+    .section-title {
+      text-align: right;
+      color: white;
+    }
+
+    .section-bottom {
+      text-align: left;
+      color: white;
+    }
+  }
+}
+
+.btn {
+  display: block;
+  width: 235px;
+  height: 59px;
+  background-color: #f7d43f;
+  font-size: 1.6rem;
+  line-height: 30px;
+  border: 1px solid #707070;
+  box-shadow: 0 0 6px #1b1310;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+
+// header 
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 19px 0;
+  color: white;
+  transition: .3s;
+
+  .container {
+
+    .header-title {
+      font-size: 2.6rem;
+      font-weight: bold;
+      font-style: italic;
+      line-height: 1.4;
+    }
+
+    .header-nav {
+
+      .nav-list {
+
+        .nav-item {
+          font-size: 1.6rem;
+          font-weight: bold;
+          font-style: italic;
+          line-height: 1.375; 
+          margin-left: 30px;
+        }
+      }
+    }
+
+    .header-nav-sp-icon {
+      display: none;
+    }
+  }
+}
+
+// jQuery
+
+.fv-after {
+  background-color: #282f35;
+  transition: .5s;
+}
+
+// first-view
+
+main {
+
+  .first-view-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/fv-1.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 0;
+
+    .container {
+      position: relative;
+
+      .main-copy {
+        position: absolute;
+        top: 65vh;
+
+        .en-copy {
+          font-size: 7rem;
+          font-weight: bold;
+          margin-bottom: 23px;
+        }
+
+        .jp-copy {
+          font-family: 'Noto serif JP';
+          font-size: 4rem;
+          font-weight: bold;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+// concept
+
+main {
+
+  .concept-wrapper {
+
+    .container {
+
+      .inner-container {
+
+        .main-concept {
+          font-family: 'Noto serif JP';
+          font-size: 3rem;
+          text-align: center;
+          font-weight: bold;
+          line-height: 50px;
+          margin-bottom: 60px;
+        }
+
+        .concept-content {
+
+          .concept-text {
+            font-family: 'Noto serif JP';
+            max-width: 440px;
+            font-size: 1.6rem;
+            font-weight: bold;
+            line-height: 30px;
+          }
+
+          img {
+            max-width: 440px;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Works
+
+main {
+
+  .works-wrapper {
+    background-image: url(../img/works-bgi.png);
+    background-size: cover;
+
+    .container {
+
+      .inner-container {
+
+        .works-contents {
+          max-width: 320px;
+          box-shadow: 0 0 6px black;
+          border: 1px solid #141414;
+          background-color: #fff;
+          margin-bottom: 80px;
+
+          img {
+            height: 200px;
+            object-fit: cover;
+          }
+
+          .works-desc {
+            font-family: 'Noto serif JP';
+            font-size: 1.6rem;
+            font-weight: normal;
+            line-height: 30px;
+            padding: 25px 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// service
+
+main {
+
+  .service-wrapper {
+    // background-color: pink;
+
+    .service-contents {
+
+      .service-item {
+        width: 100%;
+        max-width: calc(100% / 3);
+        border: 1px solid #707070;
+        position: relative;
+        
+        img {
+          max-height: 320px;
+          object-fit: cover;
+          transition: .3s;
+        }
+
+        img:hover {
+          -webkit-filter: brightness(30%);
+          transition: .3s;
+        }
+
+        .service-name {
+          font-size: 4rem;
+          line-height: 50px;
+          font-weight: bold;
+          font-style: italic;
+          color: white;
+          position: absolute;
+          top: 45%;
+          left: 33.4%;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}
+
+// contact
+
+main {
+
+  .contact-wrapper {
+    background-image: url(../img/contact-bgi.png);
+
+    .container {
+
+      .contact-desc {
+        font-family: 'Noto serif JP';
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 27px;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+// footer
+
+footer {
+  height: 79px;
+  text-align: center;
+  line-height: 79px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
