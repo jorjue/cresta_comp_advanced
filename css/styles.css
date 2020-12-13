@@ -242,4 +242,28 @@ footer {
   font-size: 1.4rem;
   font-weight: bold;
 }
+
+.copy-check {
+  opacity: 0.2;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.copy-check .copy {
+  font-size: 12rem;
+  text-align: center;
+  position: relative;
+  top: 30%;
+  color: #000;
+}
+
+.copy-check .copyright {
+  font-size: 6rem;
+  text-align: center;
+  position: relative;
+  top: 33%;
+}
 /*# sourceMappingURL=styles.css.map */
