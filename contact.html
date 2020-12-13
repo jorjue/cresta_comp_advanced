@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Cresta Design</title>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+    <link href=“https://fonts.googleapis.com/css?family=Noto+Serif|Noto+Serif+JP&display=swap” rel=“stylesheet”>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/BgSwitcher.js"></script>
+</head>
+<body>
+
+    <div class="copy-check">
+        <p class="copy">Copy</p>
+        <p class="copyright">https://crestadesign.org/</p>
+    </div>
+    
+    <header id="header">
+    
+        <div class="container flex-between">
+    
+            <div class="header-title">
+                <a href="./">
+                    Cresta Design
+                </a>
+            </div>
+    
+            <nav class="header-nav">
+                <ul class="nav-list flex-between">
+                    <li class="nav-item"><a href="index.html#concept">Concept</a></li>
+                    <li class="nav-item"><a href="index.html#service">Service</a></li>
+                    <li class="nav-item"><a href="index.html#works">Works</a></li>
+                    <li class="nav-item"><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+    
+            <nav class="header-nav-sp-icon">
+    
+            </nav>
+    
+        </div>
+    </header>
+
+    <main>
+
+        <section class="contact-top" id="ct">
+
+            <h1 class="section-title">
+                Contact
+            </h1>
+
+            <div class="section-bottom">
+                Contact us.
+            </div>
+
+        </section>
+
+        <section class="contact-form-wrapper">
+
+            <form action="" method="post">
+
+                <p class="contact-content">
+                    お問い合わせ内容
+                </p>
+
+                <label for="document">
+                    <input type="checkbox" name="document" id="document">
+                    資料請求
+                </label>
+
+                <label for="phone">
+                    <input type="checkbox" name="phone" id="phone">
+                    お電話でのご相談を希望
+                </label>
+
+                <label for="entry">
+                    <input type="checkbox" name="entry" id="entry">
+                    申し込み
+                </label>
+
+                <p class="contact-content">
+                    担当者名
+                </p>
+                <input type="text" name="name" placeholder="例）山田　太郎" class="block">
+
+                <p class="contact-content">
+                    電話番号
+                </p>
+                <input type="tel" name="telephone" placeholder="例）000-111-2222" class="block">
+
+                <p class="contact-content">
+                    メールアドレス
+                </p>
+                <input type="email" name="email" placeholder="例）example@example.com" class="block">
+
+                <p class="contact-content">
+                    その他
+                </p>
+                <textarea name="other"></textarea>
+
+                <button type="submit" class="btn" id="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        &copy;cresta.design all rights reserved
+    </footer>
+
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
