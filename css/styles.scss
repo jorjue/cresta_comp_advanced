@@ -79,6 +79,10 @@ main > section:nth-child(even) {
   border-radius: 30px;
 }
 
+.brsp {
+  display: none;
+}
+
 // header 
 
 header {
@@ -134,7 +138,7 @@ main {
     height: 100vh;
     background-image: url(../img/fv-1.png);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     color: white;
     padding: 0;
 
@@ -272,7 +276,7 @@ main {
           color: white;
           position: absolute;
           top: 45%;
-          left: 33.4%;
+          left: 33.7%;
           pointer-events: none;
         }
       }

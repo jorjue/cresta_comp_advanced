@@ -8,8 +8,6 @@ jQuery(function($) {
             $('#ct').height(),
         ];
 
-        console.log(slideHeight[1]);
-
         // ファーストビュー過ぎたら背景色のクラスを付加
         if (slideHeight[0] === undefined) {
             if (slideHeight[1] - 20 < $(this).scrollTop()) {

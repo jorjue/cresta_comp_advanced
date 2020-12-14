@@ -71,6 +71,10 @@ main > section:nth-child(even) .container .section-bottom {
   border-radius: 30px;
 }
 
+.brsp {
+  display: none;
+}
+
 header {
   position: fixed;
   z-index: 2;
@@ -111,7 +115,7 @@ main .first-view-wrapper {
   height: 100vh;
   background-image: url(../img/fv-1.png);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   color: white;
   padding: 0;
 }
@@ -217,7 +221,7 @@ main .service-wrapper .service-contents .service-item .service-name {
   color: white;
   position: absolute;
   top: 45%;
-  left: 33.4%;
+  left: 33.7%;
   pointer-events: none;
 }
 
