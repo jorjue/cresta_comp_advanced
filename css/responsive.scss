@@ -10,6 +10,11 @@
 
 @media (max-width: 900px) {
 
+    // 共通css 900px
+    section {
+        padding-bottom: 40px;
+    }
+
     .section-title {
         font-size: 3rem;
         margin-left: 15px;
@@ -21,24 +26,42 @@
         margin-right: 15px;
     }
 
+    .section-bottom {
+        font-size: 4rem;
+        line-height: 67px;
+        margin-top: 40px;
+    }
+
+    // header 900px
     header {
         padding: 15px 0;
 
         .container {
             padding: 0 20px;
+
+            .header-nav {
+
+                .nav-list {
+
+                    .nav-item {
+                        margin-left: 0;
+                        margin-right: 15px;
+                    }
+                }
+            }
         }
     }
 
     main {
 
+        // firstview 900px
         .first-view-wrapper {
-
 
             .container {
 
                 .main-copy {
                     position: static;
-                    padding-top: 33%;
+                    padding-top: 320px;
                     text-align: center;
 
                     .en-copy {
@@ -52,6 +75,7 @@
             }
         }
 
+        // concept 900px
         .concept-wrapper {
 
             .container {
@@ -68,11 +92,11 @@
                         .concept-text {
                             max-width: none;
                             padding: 0 15px;
+                            margin: 0 auto;
                             font-size: 1.6rem;
                             line-height: 30px;
                             margin-bottom: 30px;
                         }
-
                     }
                 }
             }
@@ -80,6 +104,45 @@
     }
 }
 
-@media (max-width: 445px) {
+@media (max-width: 600px) {
 
+    header {
+
+        .container {
+
+            .header-nav {
+                display: none;
+            }
+
+            .header-nav-sp-icon {
+                display: block;
+                color: white;
+            }
+        }
+    }
+
+    main {
+
+        .first-view-wrapper {
+
+            .container {
+
+                .main-copy {
+                    
+                    .en-copy {
+                        font-size: 3.7rem;
+                        margin-bottom: 53px;
+                    }
+
+                    .jp-copy {
+                        font-size: 3rem;
+
+                        .brsp {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

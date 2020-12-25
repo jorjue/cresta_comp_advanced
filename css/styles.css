@@ -100,8 +100,90 @@ header .container .header-nav .nav-list .nav-item {
   margin-left: 30px;
 }
 
-header .container .header-nav-sp-icon {
+.header-nav-sp-icon,
+.close-icon {
   display: none;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.header-nav-sp-icon span,
+.close-icon span {
+  display: inline-block;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+
+.header-nav-sp-icon span:nth-of-type(1),
+.close-icon span:nth-of-type(1) {
+  top: 0;
+}
+
+.header-nav-sp-icon span:nth-of-type(2),
+.close-icon span:nth-of-type(2) {
+  top: 9px;
+}
+
+.header-nav-sp-icon span:nth-of-type(3),
+.close-icon span:nth-of-type(3) {
+  bottom: 0;
+}
+
+.header-nav-sp-icon.active span:nth-of-type(1),
+.close-icon.active span:nth-of-type(1) {
+  -webkit-transform: translateY(9px) rotate(-45deg);
+          transform: translateY(9px) rotate(-45deg);
+}
+
+.header-nav-sp-icon.active span:nth-of-type(2),
+.close-icon.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.header-nav-sp-icon.active span:nth-of-type(3),
+.close-icon.active span:nth-of-type(3) {
+  -webkit-transform: translateY(-9px) rotate(45deg);
+          transform: translateY(-9px) rotate(45deg);
+}
+
+.close-icon {
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 22px;
+}
+
+.hb-menu-window {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: #282f35;
+  color: white;
+}
+
+.hb-menu-window .hb-menu-list {
+  text-align: center;
+  position: relative;
+  top: 317px;
+}
+
+.hb-menu-window a {
+  font-family: 'Noto serif';
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 22px;
+  display: block;
+  margin-bottom: 30px;
 }
 
 .fv-after {
@@ -126,13 +208,14 @@ main .first-view-wrapper .container {
 
 main .first-view-wrapper .container .main-copy {
   position: absolute;
-  top: 55vh;
+  top: 409px;
 }
 
 main .first-view-wrapper .container .main-copy .en-copy {
   font-size: 7rem;
   font-weight: bold;
   margin-bottom: 23px;
+  line-height: 50px;
 }
 
 main .first-view-wrapper .container .main-copy .jp-copy {

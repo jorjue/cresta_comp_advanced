@@ -5,6 +5,9 @@
 }
 
 @media (max-width: 900px) {
+  section {
+    padding-bottom: 40px;
+  }
   .section-title {
     font-size: 3rem;
     margin-left: 15px;
@@ -14,15 +17,24 @@
     margin-left: 31px;
     margin-right: 15px;
   }
+  .section-bottom {
+    font-size: 4rem;
+    line-height: 67px;
+    margin-top: 40px;
+  }
   header {
     padding: 15px 0;
   }
   header .container {
     padding: 0 20px;
   }
+  header .container .header-nav .nav-list .nav-item {
+    margin-left: 0;
+    margin-right: 15px;
+  }
   main .first-view-wrapper .container .main-copy {
     position: static;
-    padding-top: 33%;
+    padding-top: 320px;
     text-align: center;
   }
   main .first-view-wrapper .container .main-copy .en-copy {
@@ -40,9 +52,30 @@
   main .concept-wrapper .container .inner-container .concept-content .concept-text {
     max-width: none;
     padding: 0 15px;
+    margin: 0 auto;
     font-size: 1.6rem;
     line-height: 30px;
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  header .container .header-nav {
+    display: none;
+  }
+  header .container .header-nav-sp-icon {
+    display: block;
+    color: white;
+  }
+  main .first-view-wrapper .container .main-copy .en-copy {
+    font-size: 3.7rem;
+    margin-bottom: 53px;
+  }
+  main .first-view-wrapper .container .main-copy .jp-copy {
+    font-size: 3rem;
+  }
+  main .first-view-wrapper .container .main-copy .jp-copy .brsp {
+    display: block;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

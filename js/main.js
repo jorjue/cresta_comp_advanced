@@ -34,4 +34,17 @@ jQuery(function($) {
         e.preventDefault();
         alert('こちらは未実装となります。');
     });
+
+    $('#bg-menu').click(function() {
+        $(this).toggleClass('active');
+        $('#close').toggleClass('active');
+        $('#window').fadeIn(600);
+        $('#close').fadeIn();
+    });
+
+    $('#close').click(function() {
+        $('#window').fadeOut(600);
+        $(this).toggleClass('active');
+        $('#bg-menu').toggleClass('active');
+    });
 });
